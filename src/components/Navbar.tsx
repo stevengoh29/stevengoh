@@ -62,6 +62,13 @@ const Navbar = () => {
                 </li>
               );
             })}
+            <a
+              href={"/resume.pdf"}
+              className="bg-blue-500 hover:bg-blue-700 active:bg-blue-900 text-white font-bold py-3 px-5 rounded duration-300 uppercase text-xs"
+              download={true}
+            >
+              Download My Resume
+            </a>
           </ul>
         </div>
       </div>
