@@ -11,9 +11,9 @@ import {
 const page = () => {
   return (
     <div className="max-w-screen-xl bg-slate-800 m-auto p-10 mb-5">
-      <h1 className="text-3xl font-bold mb-2">Contact me</h1>
       <Breadcrumb />
-      <p className="mt-5">
+      <h1 className="text-3xl font-bold mt-2">Contact me</h1>
+      <p className="mt-2">
         Below are my contacts. Feel free to contact me anytime.
       </p>
 

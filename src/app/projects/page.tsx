@@ -4,9 +4,9 @@ import ProjectCard from "@/components/ProjectCard";
 const page = () => {
   return (
     <div className="max-w-screen-xl bg-slate-800 m-auto p-10 mb-5">
-      <h1 className="text-3xl font-bold mb-2">My Projects</h1>
       <Breadcrumb />
-      <p className="mt-5">Below are projects that I have ever worked on.</p>
+      <h1 className="text-3xl font-bold mt-2">My Projects</h1>
+      <p className="mt-2">Below are projects that I have ever worked on.</p>
       <hr className="my-5" />
       <section className="w-full grid grid-cols-3 gap-y-5">
         <ProjectCard
