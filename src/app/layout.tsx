@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import "./globals.css";
 import { Montserrat } from "next/font/google";
 import classNames from "classnames";
+import { Analytics } from "@vercel/analytics/react";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
       >
         <Navbar />
         <div className="flex-1 items-center">{children}</div>
+        <Analytics />
       </body>
     </html>
   );
