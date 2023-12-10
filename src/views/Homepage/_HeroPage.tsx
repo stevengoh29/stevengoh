@@ -26,7 +26,7 @@ const HeroPage = () => {
         repeat={Infinity}
       />
 
-      <p className="lg:text-2xl mt-5 mb-2 lg:w-3/4 font-medium">Having built 3 projects from 2 clients which improved their business process.</p>
+      <p className="lg:text-2xl mt-5 mb-2 lg:w-3/4 font-medium">Having built 4 projects from 3 clients which improved their business process.</p>
 
       {/* <div className="grid lg:grid-cols-3 place-items-center justify-center bg-slate-100 dark:bg-slate-700 text-black dark:text-white shadow-xl rounded-xl my-5 lg:my-14">
         <LogoGroupContainer logos={frontEndToDisplay} />
