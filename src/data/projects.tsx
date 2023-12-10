@@ -48,7 +48,7 @@ export const projects = [
         ]
     },
     {
-        clientLogoPath: require("../assets/images/common/logo-cinbud.png"),
+        clientLogoPath: require("../assets/images/common/logo-ledsmarthome.jpg"),
         clientName: "LED Smart Home",
         projectName: "Online Shop Management",
         projectStatus: "Production",
