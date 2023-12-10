@@ -16,7 +16,7 @@ const LedsmarthomeDescription = () => {
             <p>Tech stacks:</p>
             <ul className="list-inside list-disc">
                 <li>NextJS</li>
-                <li>Express (written in Typescript) for API</li>
+                <li>Spring Boot for API</li>
                 <li>MySQL 8</li>
                 <li>VPS CentOS 8 for hosting application and database</li>
             </ul>
