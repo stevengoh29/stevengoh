@@ -1,65 +1,67 @@
-import CSharpLogo from "../assets/csharp.png";
-import ExpressLogo from "../assets/express.png";
-import MongoLogo from "../assets/mongodb.png";
-import MysqlLogo from "../assets/mysql.png";
-import NextLogo from "../assets/nextjs.png";
-import ReactLogo from "../assets/react.png";
-import SpringLogo from "../assets/spring.png";
-import SqlLogo from "../assets/sqlserver.png";
+import CSharpLogo from "../assets/images/projects/csharp.png";
+import ExpressLogo from "../assets/images/projects/express.png";
+import MongoLogo from "../assets/images/projects/mongodb.png";
+import MysqlLogo from "../assets/images/projects/mysql.png";
+import NextLogo from "../assets/images/projects/nextjs.png";
+import ReactLogo from "../assets/images/projects/react.png";
+import SpringLogo from "../assets/images/projects/spring.png";
+import SqlLogo from "../assets/images/projects/sqlserver.png";
 
-export const frontEndToDisplay = [
+export const logoToDisplay = [
   {
     source: ReactLogo,
-    width: 64,
-    height: 64,
-    label: "React (Native)",
+    width: 96,
+    height: 96,
+    label: "React/React Native",
+    skill: "Advanced"
   },
   {
     source: NextLogo,
-    width: 64,
-    height: 64,
+    width: 96,
+    height: 96,
     label: "NextJs",
+    skill: "Advanced"
   },
-];
-
-export const backEndToDisplay = [
   {
     source: ExpressLogo,
-    width: 64,
-    height: 64,
+    width: 96,
+    height: 96,
     label: "ExpressJs",
+    skill: "Advanced"
   },
   {
     source: SpringLogo,
-    width: 64,
-    height: 64,
-    label: "Spring",
+    width: 96,
+    height: 96,
+    label: "Spring Boot",
+    skill: "Intermediate"
   },
   {
     source: CSharpLogo,
-    width: 60,
-    height: 60,
-    label: "CSharp",
+    width: 90,
+    height: 90,
+    label: "C#",
+    skill: "Advanced"
   },
-];
-
-export const databaseToDisplay = [
   {
     source: MysqlLogo,
-    width: 64,
-    height: 64,
+    width: 96,
+    height: 96,
     label: "MySQL",
+    skill: "Advanced"
   },
   {
     source: SqlLogo,
-    width: 80,
-    height: 80,
-    label: "MsSQL",
+    width: 120,
+    height: 120,
+    label: "Microsoft SQL Server",
+    skill: "Intermediate"
   },
   {
     source: MongoLogo,
-    width: 64,
-    height: 64,
-    label: "Mongo",
+    width: 96,
+    height: 96,
+    label: "MongoDB",
+    skill: "Intermediate"
   },
 ];

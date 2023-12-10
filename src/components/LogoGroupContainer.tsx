@@ -15,7 +15,7 @@ interface Logo {
 const LogoGroupContainer = (props: IProps) => {
   const { logos } = props;
   return (
-    <div className="p-5 rounded-lg text-white font-bold flex">
+    <div className="p-5 rounded-lg font-bold flex">
       {logos.map((logo, index) => {
         return (
           <div className="flex flex-col items-center px-3" key={index}>

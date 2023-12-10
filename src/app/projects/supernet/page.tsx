@@ -52,40 +52,40 @@ const page = () => {
       </table>
 
       <h2 className="text-2xl font-bold mt-5">Project Screenshots</h2>
-      <div className="grid grid-cols-4 gap-10 mt-2">
+      {/* <div className="grid grid-cols-4 gap-10 mt-2">
         <Image
-          src={require("../../../assets/projects/screenshot/supernet/1.jpg")}
+          src={require("../../../assets/images/projects/screenshot/supernet/1.jpg")}
           alt="Login Cinbud"
         />
         <Image
-          src={require("../../../assets/projects/screenshot/supernet/2.jpg")}
+          src={require("../../../assets/images/projects/screenshot/supernet/2.jpg")}
           alt="Login Cinbud"
         />
         <Image
-          src={require("../../../assets/projects/screenshot/supernet/3.jpg")}
+          src={require("../../../assets/images/projects/screenshot/supernet/3.jpg")}
           alt="Login Cinbud"
         />
         <Image
-          src={require("../../../assets/projects/screenshot/supernet/4.jpg")}
+          src={require("../../../assets/images/projects/screenshot/supernet/4.jpg")}
           alt="Login Cinbud"
         />
         <Image
-          src={require("../../../assets/projects/screenshot/supernet/5.jpg")}
+          src={require("../../../assets/images/projects/screenshot/supernet/5.jpg")}
           alt="Login Cinbud"
         />
         <Image
-          src={require("../../../assets/projects/screenshot/supernet/6.jpg")}
+          src={require("../../../assets/images/projects/screenshot/supernet/6.jpg")}
           alt="Login Cinbud"
         />
         <Image
-          src={require("../../../assets/projects/screenshot/supernet/7.jpg")}
+          src={require("../../../assets/images/projects/screenshot/supernet/7.jpg")}
           alt="Login Cinbud"
         />
         <Image
-          src={require("../../../assets/projects/screenshot/supernet/8.jpg")}
+          src={require("../../../assets/images/projects/screenshot/supernet/8.jpg")}
           alt="Login Cinbud"
         />
-      </div>
+      </div> */}
     </div>
   );
 };

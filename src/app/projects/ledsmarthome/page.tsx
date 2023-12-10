@@ -57,23 +57,23 @@ const page = () => {
       <h2 className="text-2xl font-bold mt-5">Project Screenshots</h2>
       <div className="grid grid-cols-2 gap-10 mt-2">
         <Image
-          src={require("../../../assets/projects/screenshot/ledsmarthome/1.png")}
+          src={require("../../../assets/images/projects/screenshot/ledsmarthome/1.png")}
           alt="Login Cinbud"
         />
         <Image
-          src={require("../../../assets/projects/screenshot/ledsmarthome/2.png")}
+          src={require("../../../assets/images/projects/screenshot/ledsmarthome/2.png")}
           alt="Home ledsmarthome"
         />
         <Image
-          src={require("../../../assets/projects/screenshot/ledsmarthome/3.png")}
+          src={require("../../../assets/images/projects/screenshot/ledsmarthome/3.png")}
           alt="Home ledsmarthome"
         />
         <Image
-          src={require("../../../assets/projects/screenshot/ledsmarthome/4.png")}
+          src={require("../../../assets/images/projects/screenshot/ledsmarthome/4.png")}
           alt="Home ledsmarthome"
         />
         <Image
-          src={require("../../../assets/projects/screenshot/ledsmarthome/5.png")}
+          src={require("../../../assets/images/projects/screenshot/ledsmarthome/5.png")}
           alt="Home ledsmarthome"
         />
       </div>

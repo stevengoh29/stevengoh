@@ -10,7 +10,7 @@ const page = () => {
       <hr className="my-5" />
       <section className="w-full grid grid-cols-3 gap-y-5">
         <ProjectCard
-          source={require("../../assets/projects/cinbud.png")}
+          source={require("../../assets/images/projects/cinbud.png")}
           title="Cashflow Management System"
           caption="2022-2023"
           tags={[
@@ -27,7 +27,7 @@ const page = () => {
         />
 
         <ProjectCard
-          source={require("../../assets/projects/supernet.png")}
+          source={require("../../assets/images/projects/supernet.png")}
           title="Member Application"
           caption="2022"
           tags={[
@@ -42,7 +42,7 @@ const page = () => {
         />
 
         <ProjectCard
-          source={require("../../assets/projects/ledsmarthome.jpg")}
+          source={require("../../assets/images/projects/ledsmarthome.jpg")}
           title="Online Stock Management"
           caption="2023"
           tags={[
@@ -56,7 +56,7 @@ const page = () => {
           bgColor="#F3BD49"
         />
         <ProjectCard
-          source={require("../../assets/projects/blank.jpg")}
+          source={require("../../assets/images/projects/blank.jpg")}
           title="School Academic System (API)"
           caption="Mock Project"
           tags={[{ color: "green", label: "Spring" }]}

@@ -3,11 +3,65 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 255, 255, 255;
+    --foreground-rgb: 255, 255, 255;
     --background-rgb: 0, 0, 0;
 }
 
-body {
+.bg-hero {
+  background-image: url("../assets/images/common/doodle.jpg");
+}
+
+.bg-main-light {
+  background: hsla(192, 100%, 91%, 1);
+
+  background: linear-gradient(270deg, hsla(192, 100%, 91%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
   
-  color: rgb(var(--foreground-rgb));
+  background: -moz-linear-gradient(270deg, hsla(192, 100%, 91%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
+  
+  background: -webkit-linear-gradient(270deg, hsla(192, 100%, 91%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
+}
+
+.bg-main-dark {
+  background: hsla(222, 47%, 11%, 1);
+
+background: linear-gradient(90deg, hsla(222, 47%, 11%, 1) 0%, hsla(192, 93%, 15%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(222, 47%, 11%, 1) 0%, hsla(192, 93%, 15%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(222, 47%, 11%, 1) 0%, hsla(192, 93%, 15%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0F172A", endColorstr="#068BAC", GradientType=1 );
+}
+
+
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+.floating {
+  -webkit-animation: mover 0.75s infinite  alternate;
+  animation: mover 0.75s infinite  alternate;
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
 }
