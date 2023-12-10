@@ -12,7 +12,7 @@ const ContactPage = () => {
     <div className='p-5 lg:p-10 bg-slate-900 dark:bg-slate-800 text-white'>
       <h1 className="text-3xl font-bold mt-2">🤝 Any Project Ideas? Let's get in touch!</h1>
       <hr className='my-5'/>
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-1 lg:grid-cols-2">
         <div className="flex items-center gap-10 mb-5">
           <IoLogoWhatsapp size={36} />
           <a
