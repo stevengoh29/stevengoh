@@ -1,4 +1,4 @@
-import CSharpLogo from "../assets/images/projects/csharp.png";
+import NestLogo from '../assets/images/projects/logo-nest.png'
 import ExpressLogo from "../assets/images/projects/express.png";
 import MongoLogo from "../assets/images/projects/mongodb.png";
 import MysqlLogo from "../assets/images/projects/mysql.png";
@@ -12,56 +12,56 @@ export const logoToDisplay = [
     source: ReactLogo,
     width: 96,
     height: 96,
-    label: "React/React Native",
-    skill: "Advanced"
+    label: "React Native",
+    skill: "Mobile"
   },
   {
     source: NextLogo,
     width: 96,
     height: 96,
     label: "NextJs",
-    skill: "Advanced"
+    skill: "Frontend"
+  },
+  {
+    source: NestLogo,
+    width: 90,
+    height: 90,
+    label: "NestJs",
+    skill: "Backend"
   },
   {
     source: ExpressLogo,
     width: 96,
     height: 96,
     label: "ExpressJs",
-    skill: "Advanced"
+    skill: "Backend"
   },
   {
     source: SpringLogo,
     width: 96,
     height: 96,
     label: "Spring Boot",
-    skill: "Intermediate"
-  },
-  {
-    source: CSharpLogo,
-    width: 90,
-    height: 90,
-    label: "C#",
-    skill: "Advanced"
+    skill: "Backend"
   },
   {
     source: MysqlLogo,
     width: 96,
     height: 96,
     label: "MySQL",
-    skill: "Advanced"
+    skill: "RDBMS"
   },
   {
     source: SqlLogo,
     width: 120,
     height: 120,
     label: "Microsoft SQL Server",
-    skill: "Intermediate"
+    skill: "RDBMS"
   },
   {
     source: MongoLogo,
     width: 96,
     height: 96,
     label: "MongoDB",
-    skill: "Intermediate"
+    skill: "NoSQL"
   },
 ];

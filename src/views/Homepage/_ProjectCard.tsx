@@ -33,6 +33,7 @@ const ProjectCard = (props: TProject) => {
                     width={36}
                     height={36}
                     className='rounded-xl dark:p-1 dark:bg-white'
+
                 />
                 <div>
                     <h1 className='font-semibold'>{props.projectName}</h1>
