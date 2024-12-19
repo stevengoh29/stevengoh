@@ -19,7 +19,7 @@ export default function ProjectCard(props: ProjectCardProps) {
         <PhotoProvider>
             <div className='bg-white rounded-lg shadow-lg'>
                 {project.projectScreenshots.length == 1
-                    ? <PhotoView src={'/assets/interact/interact-merchandizing-app.png'}>
+                    ? <PhotoView src={project.projectScreenshots[0]}>
                         <Image
                             src={project.projectScreenshots[0]}
                             alt="Image"
