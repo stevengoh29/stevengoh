@@ -1,4 +1,4 @@
-import Breadcrumb from "@/components/Breadcrumb";
+import Breadcrumb from "@/components/common/Breadcrumb";
 import ProjectCard from "@/components/ProjectCard";
 
 const page = () => {

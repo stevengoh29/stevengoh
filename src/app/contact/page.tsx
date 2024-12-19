@@ -1,4 +1,4 @@
-import Breadcrumb from "@/components/Breadcrumb";
+import Breadcrumb from "@/components/common/Breadcrumb";
 import React from "react";
 import {
   IoLogoGithub,

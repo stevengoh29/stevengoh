@@ -1,0 +1,126 @@
+@keyframes color-change {
+  0% {
+    background-color: #0f172a; /* Near-black dark blue */
+  }
+  10% {
+    background-color: #1e293b; /* Very dark blue */
+  }
+  50% {
+    background-color: #1e293b; /* Hold the very dark blue */
+  }
+  60% {
+    background-color: #0f172a; /* Snap back to near-black dark blue */
+  }
+  100% {
+    background-color: #0f172a; /* Hold the near-black dark blue */
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Define the keyframes for the floating effect */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Move up */
+  }
+  100% {
+    transform: translateY(0); /* Return to original position */
+  }
+}
+
+/* Utility classes */
+.floating {
+  animation: float 2s ease-in-out infinite;
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.delay-500 {
+  animation-delay: 0.5s;
+}
+
+.delay-1000 {
+  animation-delay: 1s;
+}
+
+.delay-1500 {
+  animation-delay: 1.5s;
+}
+
+.delay-2000 {
+  animation-delay: 2s;
+}
+
+.delay-2500 {
+  animation-delay: 2.5s;
+}
+
+.color-changing-background {
+  animation: color-change 8s ease-in-out infinite;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.active {
+  color: aqua;
+}
+
+.glassmorphism-dark {
+  background: rgba( 0, 0, 0, 0.55 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 1px );
+  -webkit-backdrop-filter: blur( 1px );
+  border-radius: 10px;
+}
+
+
+.glassmorphism {
+  background: rgba( 255, 255, 255, 0.55 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 1px );
+  -webkit-backdrop-filter: blur( 1px );
+  border-radius: 10px;
+}
+
+.view-section {
+  /* position: relative; */
+  background-image: url('../assets/images/common/parallax-bg.svg'); /* Your parallax image */
+  background-position: center;
+  background-attachment: fixed; /* Parallax effect */
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: 1;
+}

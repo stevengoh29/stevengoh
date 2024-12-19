@@ -7,6 +7,10 @@
     --background-rgb: 0, 0, 0;
 }
 
+html {
+  scroll-behavior: smooth !important;
+}
+
 .bg-hero {
   background-image: url("../assets/images/common/doodle.jpg");
 }
