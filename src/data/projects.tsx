@@ -30,7 +30,7 @@ export const PROJECTS: ProjectCategory = {
             projectDescription: <MerchandizerDescription />,
             projectTechStack: 'React Native, Expo, React Redux, SQLite, OneSignal, Sentry',
             projectScreenshots: [
-                require("../assets/images/projects/screenshot/interact/interact-merchandizing-app.png"),
+                '/assets/thumbnails/interact-sales-app.png',
                 // require("../assets/images/projects/screenshot/interact/2.png"),
                 // require("../assets/images/projects/screenshot/interact/3.png"),
             ]
@@ -43,9 +43,10 @@ export const PROJECTS: ProjectCategory = {
             projectDescription: <MerchandizerDescription />,
             projectTechStack: 'React Native, Expo, React Redux, SQLite, OneSignal, Sentry',
             projectScreenshots: [
-                require("../assets/images/projects/screenshot/interact/1.png"),
-                require("../assets/images/projects/screenshot/interact/2.png"),
-                require("../assets/images/projects/screenshot/interact/3.png"),
+                '/assets/thumbnails/interact-merchandizing-app.png'
+                // require("../assets/images/projects/screenshot/interact/1.png"),
+                // require("../assets/images/projects/screenshot/interact/2.png"),
+                // require("../assets/images/projects/screenshot/interact/3.png"),
             ]
         },
         {
@@ -54,11 +55,12 @@ export const PROJECTS: ProjectCategory = {
             projectName: "Merchandizer Supervisor App",
             projectStatus: "Production",
             projectDescription: <MerchandizerDescription />,
-            projectTechStack: 'React Native, Expo, React Redux, SQLite, OneSignal, Sentry',
+            projectTechStack: 'React Native, Expo, React Redux, OneSignal, Sentry',
             projectScreenshots: [
-                require("../assets/images/projects/screenshot/interact/1.png"),
-                require("../assets/images/projects/screenshot/interact/2.png"),
-                require("../assets/images/projects/screenshot/interact/3.png"),
+                '/assets/thumbnails/supervisor-merchandizer-app.png'
+                // require("../assets/images/projects/screenshot/interact/1.png"),
+                // require("../assets/images/projects/screenshot/interact/2.png"),
+                // require("../assets/images/projects/screenshot/interact/3.png"),
             ]
         },
         {
@@ -66,25 +68,13 @@ export const PROJECTS: ProjectCategory = {
             clientName: "PT. Supernet Nusantara",
             projectName: "Membership Mobile App",
             projectStatus: "Production",
-            projectTechStack: 'React Native Expo, Firebase Authentication',
+            projectTechStack: 'React Native, Expo, Firebase',
             projectDescription: <SupernetMobileDescription />,
             projectScreenshots: [
-                require("../assets/images/projects/screenshot/supernet/1.png"),
-                require("../assets/images/projects/screenshot/supernet/2.png"),
-                require("../assets/images/projects/screenshot/supernet/3.png"),
-            ]
-        },
-        {
-            clientLogoPath: require("../assets/images/common/logo-supernet.png"),
-            clientName: "PT. Supernet Nusantara",
-            projectName: "Global School Management",
-            projectStatus: "Production",
-            projectTechStack: 'React Native Expo, Firebase Authentication',
-            projectDescription: <SupernetMobileDescription />,
-            projectScreenshots: [
-                require("../assets/images/projects/screenshot/supernet/1.png"),
-                require("../assets/images/projects/screenshot/supernet/2.png"),
-                require("../assets/images/projects/screenshot/supernet/3.png"),
+                '/assets/thumbnails/supernet-membership-app.png'
+                // require("../assets/images/projects/screenshot/supernet/1.png"),
+                // require("../assets/images/projects/screenshot/supernet/2.png"),
+                // require("../assets/images/projects/screenshot/supernet/3.png"),
             ]
         }
     ],
