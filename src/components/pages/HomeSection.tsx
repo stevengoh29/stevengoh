@@ -5,22 +5,25 @@ import { AiFillFilePdf } from "react-icons/ai";
 import { BiLogoGmail } from "react-icons/bi";
 import { IoChevronDown, IoLogoGitlab, IoLogoInstagram, IoLogoLinkedin, IoLogoWhatsapp } from 'react-icons/io5';
 import SectionWrapper from '../common/SectionWrapper';
+import ActionButtonGroup from '../common/ActionButtonGroup';
 
 const commonLogoHoverClassName = "hover:scale-110 hover:cursor-pointer transition-all duration-300 ease-in-out"
 
 export default function HomeSection() {
   return (
-    <SectionWrapper id='home' className="bg-slate-100 dark:bg-slate-900 h-screen w-screen flex justify-center items-center">
+    <SectionWrapper id='home' className="bg-slate-100 dark:bg-slate-900 h-screen w-screen flex justify-center items-center p-5 lg:p-0">
       <div className="text-center relative z-10">
         <h1 className="text-5xl md:text-7xl font-bold mb-4 opacity-0 translate-y-[-50px] animate-fadeInUp">
           Hi, I'm <span className="text-blue-700">Steven Gozali</span>
         </h1>
 
-        <p className="text-xl md:text-2xl text-gray-400 mb-6 opacity-0 translate-y-[50px] animate-fadeInUp delay-500">
+        <p className="text-lg lg:text-xl md:text-2xl text-gray-400 mb-6 opacity-0 translate-y-[50px] animate-fadeInUp delay-500">
           Welcome to my portfolio. Explore my work and see what I can create for you.
         </p>
 
-        <div className="mt-4 opacity-0 animate-fadeIn delay-1500 flex gap-5 justify-center">
+        <ActionButtonGroup />
+
+        {/* <div className="fixed bottom-0 w-full bg-white shadow-md py-3 flex gap-5 justify-center">
           <IoLogoLinkedin
             size={36}
             className={classNames("text-blue-700 hover:text-blue-500", commonLogoHoverClassName)}
@@ -51,8 +54,7 @@ export default function HomeSection() {
             className="text-red-600 hover:text-red-500 transition-all duration-300 ease-in-out"
             title="CV"
           />
-        </div>
-
+        </div> */}
       </div>
 
       <div className={'opacity-0 animate-fadeIn delay-2500 absolute bottom-10'}>

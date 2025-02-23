@@ -116,7 +116,7 @@
 
 .view-section {
   /* position: relative; */
-  background-image: url('../assets/images/common/parallax-bg.svg'); /* Your parallax image */
+  /* background-image: url('../assets/images/common/parallax-bg.svg'); Your parallax image */
   background-position: center;
   background-attachment: fixed; /* Parallax effect */
   background-size: cover;

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { ThemeSwitcher } from "./common/ThemeToggle";
+import { useHasScrolled } from "@/hooks/use-has-scrolled.hook";
 
 type NavbarProps = {
   activeSection: string
@@ -14,42 +15,17 @@ const Navbar = (props: NavbarProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { theme } = useTheme();
 
-  const { activeSection } = props
+  const { hasScrolled } = useHasScrolled()
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const [scrolling, setScrolling] = useState(false);
-  const [color, setColor] = useState('#f1f5f9');
-
-  // Function to handle the scroll event
-  const handleScroll = () => {
-    if (window.scrollY > 200) {
-      setScrolling(true);
-    } else {
-      setScrolling(false);
-    }
-  };
-
-  // Effect to add and remove the scroll event listener
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  useEffect(() => {
-    if (theme == 'dark') setColor('#0f172a')
-    if (theme == 'light') setColor('#f1f5f9')
-  }, [theme])
-
   if (theme == undefined) return null
 
   return (
     <>
-      <nav className={`p-2 fixed w-full duration-500 z-50 ${scrolling ? 'glassmorphism dark:lg:bg-slate-900/60' : ''}`}>
+      <nav className={`p-2 fixed w-full duration-500 z-50 ${hasScrolled ? 'glassmorphism dark:lg:bg-slate-900/60' : ''}`}>
         <div className=" flex items-center justify-end py-2 px-5">
           <button
             onClick={toggleMenu}

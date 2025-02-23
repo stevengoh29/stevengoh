@@ -18,35 +18,36 @@ export default function ProjectCard(props: ProjectCardProps) {
     return (
         <PhotoProvider>
             <div className='bg-white rounded-lg shadow-lg'>
-                {project.projectScreenshots.length == 1
-                    ? <PhotoView src={project.projectScreenshots[0]}>
-                        <Image
+                {project.projectScreenshots.length === 1 ? (
+                    <PhotoView src={project.projectScreenshots[0]}>
+                        <img
                             src={project.projectScreenshots[0]}
                             alt="Image"
-                            className='rounded-lg'
+                            className="rounded-lg w-full object-cover h-48"
                             style={{ cursor: 'pointer' }}
                         />
                     </PhotoView>
-                    : <Carousel showStatus={false} showThumbs={false} infiniteLoop={true} autoPlay={true} interval={3000} swipeable={true}>
-                        {project.projectScreenshots.map((image: string, index: number) => {
-                            return <PhotoView key={index} src={image}>
-                                <Image
+                ) : (
+                    <Carousel showStatus={false} showThumbs={false} infiniteLoop={false} autoPlay={false} interval={3000} swipeable={true}>
+                        {project.projectScreenshots.map((image: string, index: number) => (
+                            <PhotoView key={index} src={image}>
+                                <img
                                     src={image}
                                     alt={`image ${index}`}
-                                    className='rounded-lg'
-                                    style={{ cursor: 'pointer' }}
+                                    className="rounded-lg w-full object-cover h-48"
+                                    style={{ cursor: 'pointer', pointerEvents: 'auto' }}
                                 />
                             </PhotoView>
-                        })}
+                        ))}
                     </Carousel>
-                }
+                )}
                 <div className='p-3'>
                     <div className='flex justify-between items-center'>
                         <h1 className='text-sm font-bold'>{project.projectName}</h1>
-                        <p className='text-xs text-emerald-900 bg-emerald-300 p-1 rounded-lg'>dummy</p>
+                        {/* <p className='text-xs text-emerald-900 bg-emerald-300 p-1 rounded-lg'>dummy</p> */}
                     </div>
                     <p className='text-xs text-slate-500'>Tech stacks: {project.projectTechStack}</p>
-                    {/* {project.projectDescription} */}
+                    <div className='text-sm mt-2 text-slate-900' dangerouslySetInnerHTML={{ __html: project.projectDescription }} />
                 </div>
             </div>
         </PhotoProvider>

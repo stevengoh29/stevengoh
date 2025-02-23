@@ -3,7 +3,7 @@ import { FaLinkedin, FaGitlab, FaInstagram } from 'react-icons/fa';
 
 export default function FooterSection() {
     return (
-        <footer className="bg-gray-800 text-white py-8">
+        <footer className="bg-slate-100 dark:bg-slate-900 text-black dark:text-white py-8">
             <div className="max-w-7xl mx-auto px-6 md:flex md:justify-between">
                 {/* Footer Links */}
                 <div className="mb-8 md:mb-0">
