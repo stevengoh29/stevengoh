@@ -1,14 +1,9 @@
 'use client'
 
-import classNames from 'classnames'
-import React, { useEffect, useState } from 'react'
-import { IoChevronDown, IoDocumentText, IoLogoGitlab, IoLogoInstagram, IoLogoLinkedin, IoLogoWhatsapp, IoMagnet, IoMail } from 'react-icons/io5'
-import { AiFillFilePdf } from "react-icons/ai";
-import { BiLogoGmail } from "react-icons/bi";
-import { useInView } from 'react-intersection-observer';
-import SectionWrapper from '../common/SectionWrapper';
-import { TECH_STACK_LOGO_BY_CATEGORY, TechStackCategory } from '@/data/techStack.data';
+import { TECH_STACK_LOGO_BY_CATEGORY } from '@/data/techStack';
+import { useState } from 'react';
 import SkillCard from '../cards/SkillCard';
+import SectionWrapper from '../common/SectionWrapper';
 
 const TECH_STACK_CATEGORIES = Object.keys(TECH_STACK_LOGO_BY_CATEGORY)
 

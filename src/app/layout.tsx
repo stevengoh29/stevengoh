@@ -9,9 +9,10 @@ import "./globals.css";
 const poppins = Poppins({ subsets: ['latin'], weight: ['500', '700'] })
 
 export const metadata = {
-  title: "Steven's Portfolio",
-  description: "Built by Steven",
+  title: "Steven Goh - React Native | NextJS | NestJS | Spring Boot Developer",
+  description: "Explore the portfolio of Steven Goh, a skilled Full-Stack Developer specializing in NextJS, NextJS, Spring Boot, and React Native. Showcasing innovative projects, technical expertise, and software solutions.",
 };
+
 
 export default function RootLayout({
   children,

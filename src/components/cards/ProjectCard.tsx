@@ -17,7 +17,7 @@ export default function ProjectCard(props: ProjectCardProps) {
     const { project } = props
     return (
         <PhotoProvider>
-            <div className='bg-white rounded-lg shadow-lg'>
+            <div className='bg-white dark:bg-slate-900 rounded-lg shadow-lg'>
                 {project.projectScreenshots.length === 1 ? (
                     <PhotoView src={project.projectScreenshots[0]}>
                         <img
@@ -46,8 +46,8 @@ export default function ProjectCard(props: ProjectCardProps) {
                         <h1 className='text-sm font-bold'>{project.projectName}</h1>
                         {/* <p className='text-xs text-emerald-900 bg-emerald-300 p-1 rounded-lg'>dummy</p> */}
                     </div>
-                    <p className='text-xs text-slate-500'>Tech stacks: {project.projectTechStack}</p>
-                    <div className='text-sm mt-2 text-slate-900' dangerouslySetInnerHTML={{ __html: project.projectDescription }} />
+                    <p className='text-xs text-slate-500 dark:text-slate-300'>Tech stacks: {project.projectTechStack}</p>
+                    <div className='text-sm mt-2 text-slate-900 dark:text-white' dangerouslySetInnerHTML={{ __html: project.projectDescription }} />
                 </div>
             </div>
         </PhotoProvider>

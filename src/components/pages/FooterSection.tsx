@@ -1,3 +1,4 @@
+import { LINK } from '@/data/links';
 import React from 'react';
 import { FaLinkedin, FaGitlab, FaInstagram } from 'react-icons/fa';
 
@@ -36,17 +37,17 @@ export default function FooterSection() {
                 <div className="mb-8 md:mb-0">
                     <ul className="flex space-x-6">
                         <li>
-                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-blue-500">
+                            <a href={LINK.INSTAGRAM} target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-blue-500">
                                 <FaInstagram />
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-blue-500">
+                            <a href={LINK.LINKED_IN} target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-blue-500">
                                 <FaLinkedin />
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.gitlab.com" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-blue-500">
+                            <a href={LINK.GITLAB} target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-blue-500">
                                 <FaGitlab />
                             </a>
                         </li>
@@ -56,7 +57,7 @@ export default function FooterSection() {
 
             {/* Footer Bottom */}
             <div className="text-center text-sm mt-8">
-                <p>&copy; 2024 Steven Gozali. All Rights Reserved.</p>
+                <p>&copy; {new Date().getFullYear()} Steven Gozali. All Rights Reserved.</p>
             </div>
         </footer>
     );

@@ -26,15 +26,7 @@ export default function WorkSection() {
         </div>
         <div className='lg:my-10 md:w-1/2 overflow-x-auto scroll-hide lg:w-3/4 grid lg:grid-cols-3 gap-5 mx-auto w-full px-5'>
           {PROJECTS[category as keyof typeof PROJECTS].map((project, index) => {
-            // return <ProjectCard2
-            //   clientLogoPath={project.clientLogoPath}
-            //   clientName={project.clientName}
-            //   projectDescription={project.projectDescription}
-            //   projectName={project.projectName}
-            //   projectStatus={project.projectStatus}
-            //   projectScreenshots={project.projectScreenshots}
-            // />
-            return <ProjectCard project={project} />
+            return <ProjectCard project={project} key={index} />
           })}
         </div>
       </SectionWrapper >

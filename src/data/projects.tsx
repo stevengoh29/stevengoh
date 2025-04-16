@@ -106,8 +106,13 @@ export const PROJECTS: ProjectCategory = {
             clientName: "Revnology - Malaysia",
             projectName: "Last Wars Academy - Wiki CMS",
             projectStatus: "Production",
-            projectDescription: "",
-            projectTechStack: 'React Native, Expo, React Redux, OneSignal, Sentry',
+            projectDescription: `
+                <ul style="list-style-type: disc; padding-left: 12px;">
+                    <li>Integrated Strapi as a headless CMS to allow easy content creation and updates by non-developers</li>
+                    <li>Deployed with SEO-friendly structure and dynamic routing for game-related pages</li>
+                </ul>
+            `,
+            projectTechStack: 'NextJS, Strapi CMS, PostgreSQL',
             projectScreenshots: [
                 "/assets/projects/last-war-cms/1.png",
                 "/assets/projects/last-war-cms/2.png",
@@ -162,20 +167,20 @@ export const PROJECTS: ProjectCategory = {
                 "/assets/projects/cinbud-online-book/6.png",
             ]
         },
-        {
-            clientLogoPath: require("../assets/images/common/logo-interact.png"),
-            clientName: "Revnology - Malaysia",
-            projectName: "Global School Management",
-            projectStatus: "Production",
-            projectDescription: "",
-            projectTechStack: 'React Native, Expo, React Redux, OneSignal, Sentry',
-            projectScreenshots: [
-                '/assets/thumbnails/supervisor-merchandizer-app.png'
-                // require("../assets/images/projects/screenshot/interact/1.png"),
-                // require("../assets/images/projects/screenshot/interact/2.png"),
-                // require("../assets/images/projects/screenshot/interact/3.png"),
-            ]
-        },
+        // {
+        //     clientLogoPath: require("../assets/images/common/logo-interact.png"),
+        //     clientName: "Revnology - Malaysia",
+        //     projectName: "Global School Management",
+        //     projectStatus: "Production",
+        //     projectDescription: "",
+        //     projectTechStack: 'React Native, Expo, React Redux, OneSignal, Sentry',
+        //     projectScreenshots: [
+        //         '/assets/thumbnails/supervisor-merchandizer-app.png'
+        //         // require("../assets/images/projects/screenshot/interact/1.png"),
+        //         // require("../assets/images/projects/screenshot/interact/2.png"),
+        //         // require("../assets/images/projects/screenshot/interact/3.png"),
+        //     ]
+        // },
     ]
 }
 
